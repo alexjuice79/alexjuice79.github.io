@@ -1,0 +1,50 @@
+@keyframes load-anim {
+    45% {
+        background: darkorange;
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p { font-family: arial; }
+
+.fl { display: flex; }
+.a-center{ align-items: center; }
+.col { flex-direction: column; }
+
+html, body { height: 100%; }
+
+body {
+    max-width: 1920px;
+    margin: auto;
+}
+.lead{
+    width: 100%;
+}
+
+.lead .title{
+    font-size: 58px;
+    color: orange;
+}
+
+.lead .loading{
+    font-size: 24px;
+    margin-bottom: 90px;
+}
+
+.loading-anim{
+    width: 200px;
+    height: 200px;
+    animation-name: load-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

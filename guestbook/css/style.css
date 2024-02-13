@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, p, a{ font-family: arial; }
+h1, h3, p, a{ font-family: arial; }
 
 html, body{
     height: 100%;
@@ -20,6 +20,7 @@ html, body{
 body{
     max-width: 1920px;
     margin: auto;
+    background: #000642;
 }
 
 header{
@@ -27,6 +28,7 @@ header{
     padding: 5px;
     width: 100%;
     background: linear-gradient(-135deg, black, gray, black);
+    box-shadow: 0px 10px 12px white;
 }
 
 header p{
@@ -59,43 +61,17 @@ main{
     flex-grow: 1;
 }
 
-.sidebar, .main {
-    /* border: 1px solid black; */
-    height: 100%;
-}
-
-.sidebar{
-    width: 20%;
-    background: #ccc;
-}
-
-.sidebar div:first-child{
-    margin-top: 16px;
-}
-
-.sidebar .ad{
-    height: 100%;
-    max-width: 240px;
-    max-height: 320px;
-    border: 1px solid black;
-    margin-top: 35px;
-}
-
-.sidebar .ad img{
+.main {
     width: 100%;
+    padding: 15px;
 }
 
-.sidebar .ad p{
-    margin-top: 5px;
-    color: black;
-}
-
-.main {width: 80%;}
+.main p, .main h1, footer p { color: white; }
 
 .b-r{ border-radius: 12px; }
 
 .title {
-    border: 1px solid black;
+    border: 1px solid white;
     margin-top: 42px;
     padding: 15px;
 }
@@ -104,38 +80,40 @@ main{
     font-size: 20px;
 }
 
-.form{
+.guestbook {
+    margin-top: 42px;
     width: 100%;
-    margin-top: 48px;
-    padding-right: 35px;
-}
-
-form{
-    border: 1px solid black;
-    border-radius: 15px;
     height: 100%;
-    padding: 45px 15px 45px 15px;
+    padding: 15px;
 }
 
-form * {margin-bottom: 5px;}
+.guestbook .inserter{
+    border: 1px solid white;
+    padding: 15px;
+}
 
-form input{
+.m-t-15{
+    margin-top: 15px;
+}
+
+.guestbook .messages{
+    border: 1px solid white;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.guestbook form .input{
     background: none;
-    padding: 5px 15px 5px 15px;
-    border: 2px solid black;
-    border-radius: 4px;
-}
-
-form input[type='submit']:hover{
-    background: black;
+    border: 2px solid white;
+    padding: 2px;
     color: white;
 }
 
-form a{
-    font-size: 14px;
-}
+.guestbook .messages h3{ color: white; }
+
+.guestbook .messages p{ margin-top: 15px; }
 
 footer{
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid white;
 }

@@ -9,7 +9,7 @@
 
 - [/](https://alexjuice79.github.io/ "Главная страница")
 - [/im](https://alexjuice79.github.io/im "Личный кабинет")
-- [/guestbook](https://alexjuice79.github.io/loading "Гостевая книга")
+- [/guestbook](https://alexjuice79.github.io/guestbook "Гостевая книга")
 - [/loading](https://alexjuice79.github.io/loading "Загрузка")
 
 ### Используемое

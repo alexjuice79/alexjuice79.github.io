@@ -36,7 +36,8 @@
                 </div>
                 <?php
                     require_once '../db/connection.php';
-                    $stmt = $conn->query('SELECT * FROM guestbook ORDER BY id DESC');
+                    $stmt = $conn->prepare('SELECT * FROM guestbook ORDER BY id DESC');
+                    $stmt->execute();
                     foreach ($stmt as $row) {
                         echo '<div class="messages b-r"><div><h3>- '.$row['name'].'</h3><p>'.$row['content'].'</p></div></div>';
                     }

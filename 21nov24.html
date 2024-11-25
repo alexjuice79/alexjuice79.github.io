@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = ['Дуров', 'Маск', 'Райан Гослинг'];
+        let tel = ['+4681351', '+354683651', '+98585351'];
+        let balance = [10000, 5000, 750067800];
+        let rate = [9.5, 14, 21];
+        let period = [5, 7, 15];
+
+        document.write(name[0] + " " + tel[0] + " " + balance[0]);
+        document.write("<br>");
+
+        let client1 = {
+            name: 'Дуров',
+            tel: '+4681351',
+            balance: 10000,
+            rate: 9.5,
+            period: 5,
+            result: function(){
+                for (let i = 0; i < this.period; i++){
+                    this.balance += this.balance*this.rate/100;
+                    document.write(i + ': ' + this.balance + "<br>")
+                }
+            }
+        };
+
+        document.write(client1.name + " " + client1.tel + " " + client1.balance + "<br>");
+        client1.result();
+
+    </script>
+</body>
+</html>

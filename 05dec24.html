@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const task1 = function(){
+            let value = 123435;
+
+            rubs = Math.floor(value/100);
+            kops = value-rubs*100
+
+            console.log("1. " + rubs + " р. " + kops + " коп.");
+        }
+
+        const task2 = function(){
+            let value = 876452;
+
+            kilo = Math.floor(value/1000);
+            kilo2 = value-kilo*1000
+
+            console.log("2. " + kilo + " кг " + kilo2 + " г.");
+        }
+
+        const task3 = function(){
+            let value = 503826;
+
+            hours = Math.floor(value/3600)
+            seconds = value-hours*3600
+            minuts = Math.floor(seconds/60)
+            seconds = seconds-minuts*60
+
+            console.log("3. " + hours + " ч. " + minuts + " мин. " + seconds + " сек.");
+        }
+
+        const task4 = function(){
+            let rubs = 12
+            let kops = 78
+
+            console.log("4. " + Number(rubs*100+kops) + " коп.");
+        }
+
+        const task5 = function(){
+            let tons = 7;
+            let kilo = 34;
+            let kilo2 = 15;
+
+            console.log("5. " + Number(tons*1000000+kilo*1000+kilo2) + " г.");
+        }
+
+        const task6 = function(){
+            let sutok = 15;
+            let hours = 7;
+            let minuts = 43;
+            let seconds = 5;
+
+            console.log("6. " + Number(sutok*24*60*60 + hours*60*60 + minuts*60 + seconds) + " сек.");
+        }
+
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+    </script>
+</body>
+</html>
